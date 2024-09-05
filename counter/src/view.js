@@ -2,6 +2,9 @@ const hh = require("hyperscript-helpers");
 const { h, diff, patch } = require("virtual-dom");
 const createElement = require("virtual-dom/create-element");
 const MSGS = require("./index");
+const app = require('./app');
+const update = require("./update");
+const initModel = require("./model");
 
 function view(dispatch, model) {
     const btnStyle = "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded";

@@ -2,6 +2,9 @@ const hh = require("hyperscript-helpers");
 const { h, diff, patch } = require("virtual-dom");
 const createElement = require("virtual-dom/create-element");
 const MSGS = require("./index");
+const update = require("./update");
+const initModel = require("./model");
+const view = require("./view");
 
 function app(initModel, update, view, node) {
     let model = initModel;
